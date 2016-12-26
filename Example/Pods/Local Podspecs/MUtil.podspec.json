@@ -1,0 +1,22 @@
+{
+  "name": "MUtil",
+  "version": "0.1.0",
+  "summary": "A short description of MUtil.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/MUtil",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "宮田　寿康": "toshiyasu_miyata@gdo.co.jp"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/MUtil.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MUtil/Classes/**/*"
+}

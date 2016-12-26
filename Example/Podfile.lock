@@ -1,0 +1,16 @@
+PODS:
+  - MUtil (0.1.0)
+
+DEPENDENCIES:
+  - MUtil (from `../`)
+
+EXTERNAL SOURCES:
+  MUtil:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MUtil: d4fadaed1ce1f108621f01745227224a720c9108
+
+PODFILE CHECKSUM: c643e45b2fa5b688b60ec634845f98e1747d248b
+
+COCOAPODS: 1.1.1
