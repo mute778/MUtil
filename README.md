@@ -22,7 +22,7 @@ pod "MUtil"
 
 ## Author
 
-宮田　寿康, toshiyasu_miyata@gdo.co.jp
+mute, mute.develop@gmail.com
 
 ## License
 

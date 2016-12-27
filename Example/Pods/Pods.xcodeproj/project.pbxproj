@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		038896CF6C3062D7B9E5284E789B8B35 /* MUtil-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A3575F197D21C4FAF6F7D4558BFBD37 /* MUtil-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		046DE4CC9C872C44C7E90314E7C51661 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436ADDBE157C8AAF3085CCDD9CAB9E05 /* ReplaceMe.swift */; };
 		0637C118786A8D3541205EA8690EA4BF /* MUtil-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56847BCC95D031E55BC1D42C73D903B5 /* MUtil-dummy.m */; };
 		4B4888944A40EAD9543FFC1F2814788C /* Pods-MUtil_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DB82826FF4B8375F9C555E8E4C5066 /* Pods-MUtil_Tests-dummy.m */; };
 		641B9E099F041E5477D01D2D7F593447 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		680B7F045CF8CF06BBE305357208EB0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		BF85CB5E1E10D87D00602A7D /* MUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85CB5D1E10D87D00602A7D /* MUtil.swift */; };
+		BF85CB5F1E10D87D00602A7D /* MUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85CB5D1E10D87D00602A7D /* MUtil.swift */; };
+		BF85CB601E10D87D00602A7D /* MUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85CB5D1E10D87D00602A7D /* MUtil.swift */; };
 		C698EE0073C5434AD565D6383712C293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		C96D64386739B674DC35CF887E1275BD /* Pods-MUtil_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A6D68FF7EB61104F95E35EA56373B9C /* Pods-MUtil_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5DFBA0C41A4EA36B01CC3DDBA2DEFF7 /* Pods-MUtil_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9D6BF934EBAEC8CDE81DDA724E5C7E /* Pods-MUtil_Example-dummy.m */; };
@@ -35,7 +37,6 @@
 		21916FE6FCC004FC8439C254D82677E4 /* Pods-MUtil_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MUtil_Example-frameworks.sh"; sourceTree = "<group>"; };
 		25D374C26921C36D2C7E6AC9691E423C /* Pods-MUtil_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MUtil_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		2BF5B9DA58E330D2434E5EA84EC07126 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		436ADDBE157C8AAF3085CCDD9CAB9E05 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		49E21EE3E4903B443F513427E96CDB50 /* MUtil.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MUtil.xcconfig; sourceTree = "<group>"; };
 		4A3575F197D21C4FAF6F7D4558BFBD37 /* MUtil-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MUtil-umbrella.h"; sourceTree = "<group>"; };
 		4CBF2388CB751CE1E042CD8120116C95 /* Pods-MUtil_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MUtil_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		A25665BC726453E214EF1CE24A7A4136 /* MUtil-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MUtil-prefix.pch"; sourceTree = "<group>"; };
 		B6FAC30E327B0C69EB8F3D4974712B26 /* Pods-MUtil_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MUtil_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BD5206163B4F71F5F39BC5FAD70E1389 /* Pods-MUtil_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MUtil_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF85CB5D1E10D87D00602A7D /* MUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MUtil.swift; sourceTree = "<group>"; };
 		C1DB82826FF4B8375F9C555E8E4C5066 /* Pods-MUtil_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MUtil_Tests-dummy.m"; sourceTree = "<group>"; };
 		C1FF7311DB6E05A705558EA4C08078AE /* Pods-MUtil_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MUtil_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C3A6A64C2BDDF45EF229A8986F2327D6 /* MUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,7 +119,7 @@
 		4D6F61A2C393C46928E8EB18D3A9CCEF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				436ADDBE157C8AAF3085CCDD9CAB9E05 /* ReplaceMe.swift */,
+				BF85CB5D1E10D87D00602A7D /* MUtil.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -319,6 +321,9 @@
 					4E63BD9410B84573E2207950BA08A57C = {
 						LastSwiftMigration = 0810;
 					};
+					85E033802BC9C9E5BB2554815C742488 = {
+						LastSwiftMigration = 0810;
+					};
 				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -346,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B4888944A40EAD9543FFC1F2814788C /* Pods-MUtil_Tests-dummy.m in Sources */,
+				BF85CB601E10D87D00602A7D /* MUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0637C118786A8D3541205EA8690EA4BF /* MUtil-dummy.m in Sources */,
-				046DE4CC9C872C44C7E90314E7C51661 /* ReplaceMe.swift in Sources */,
+				BF85CB5E1E10D87D00602A7D /* MUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5DFBA0C41A4EA36B01CC3DDBA2DEFF7 /* Pods-MUtil_Example-dummy.m in Sources */,
+				BF85CB5F1E10D87D00602A7D /* MUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +389,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ECE1C75B17D3FA7679BC9C7301F680B5 /* Pods-MUtil_Tests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -407,6 +415,8 @@
 				PRODUCT_NAME = Pods_MUtil_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -501,6 +511,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C90EBE738768E9584B006CE047894C10 /* Pods-MUtil_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -537,6 +548,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B6FAC30E327B0C69EB8F3D4974712B26 /* Pods-MUtil_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -639,6 +651,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F18EC014CF1B7A0372A3B9BF506E9779 /* Pods-MUtil_Tests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -664,6 +677,7 @@
 				PRODUCT_NAME = Pods_MUtil_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
