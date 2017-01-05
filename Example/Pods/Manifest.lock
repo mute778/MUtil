@@ -1,5 +1,5 @@
 PODS:
-  - MUtil (0.1.0)
+  - MUtil (0.1.2)
 
 DEPENDENCIES:
   - MUtil (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MUtil: d4fadaed1ce1f108621f01745227224a720c9108
+  MUtil: 1b78e98ef9454b5ea7f712dc461204051c38b5ad
 
 PODFILE CHECKSUM: c643e45b2fa5b688b60ec634845f98e1747d248b
 
