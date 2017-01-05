@@ -2,13 +2,13 @@
 //  MUtil.swift
 //  Pods
 //
-//  Created by 宮田　寿康 on 2016/12/26.
+//  Created by mute778 on 2016/12/26.
 //
 //
 
 import UIKit
 
-class MUtil: NSObject {
+@objc class MUtil: NSObject {
     
     /**
      ログを出力する
