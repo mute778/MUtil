@@ -7,7 +7,7 @@
 //
 
 #import "ObjcTopViewController.h"
-#import "MUtil.h"
+#import "MUtil-Swift.h"
 
 @interface ObjcTopViewController ()
 
