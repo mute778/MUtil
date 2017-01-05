@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc class MUtil: NSObject {
+@objc public class MUtil: NSObject {
     
     /**
      ログを出力する
@@ -17,7 +17,7 @@ import UIKit
      - parameter function: メソッド名(省略)
      - parameter line: 行番号(省略)
      */
-    class func log(
+    public class func log(
         _ message: String,
         file: String = #file,
         function: String = #function,
@@ -41,7 +41,7 @@ import UIKit
      OSバージョン文字列を取得する
      - returns: String OSバージョン
      */
-    class func getOsVersion() -> String {
+    public class func getOsVersion() -> String {
         return UIDevice.current.systemVersion
     }
     
@@ -49,7 +49,7 @@ import UIKit
      アプリバージョン文字列を取得する
      - returns: String アプリバージョン文字列
      */
-    class func getAppVersion() -> String {
+    public class func getAppVersion() -> String {
         return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
     }
     
@@ -57,14 +57,14 @@ import UIKit
      アプリのビルドバージョン文字列を取得する
      - returns: String ビルドバージョン文字列
      */
-    class func getBuildVersion() -> String {
+    public class func getBuildVersion() -> String {
         return Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as! String
     }
     
     /**
      ローカライズファイルから文字列を取得する
      */
-    class func getLocalizedString(_ key: String) -> String {
+    public class func getLocalizedString(_ key: String) -> String {
         return NSLocalizedString(key, comment: "");
     }
     
@@ -73,7 +73,7 @@ import UIKit
      - parameter date: 変換対象日付
      - paremeter format: 出力形式フォーマット
      */
-    class func getGregorianDateString(date: Date, format: String) -> String {
+    public class func getGregorianDateString(date: Date, format: String) -> String {
         
         // DateFormatter設定
         let dateFormat = DateFormatter()
@@ -93,7 +93,7 @@ import UIKit
      - parameter url: 指定URL文字列
      - returns: Bool YES:開くことができる, NO:開くことができない
      */
-    class func canOpenURL(_ url: String) -> Bool {
+    public class func canOpenURL(_ url: String) -> Bool {
         return UIApplication.shared.canOpenURL(URL(string: url)!)
     }
     
@@ -102,7 +102,7 @@ import UIKit
      - parameter url: 指定URL文字列
      - returns: Bool YES:開くことができた場合, NO:開くことができなかった場合
      */
-    class func openURL(_ url: String) -> Bool {
+    public class func openURL(_ url: String) -> Bool {
         if ( canOpenURL(url) ) {
             // 指定URLを開くことができる場合
             
@@ -118,7 +118,7 @@ import UIKit
      設定されているアプリのスキームを全て取得する
      - returns: Array<String>
      */
-    class func getAppSchemeList() -> Array<String> {
+    public class func getAppSchemeList() -> Array<String> {
         
         var result: Array<String> = []
         
@@ -143,7 +143,7 @@ import UIKit
      - parameter scheme: String 確認対象文字列
      - returns: Bool YES:設定されている, NO:設定されていない
      */
-    class func isAppScheme(_ scheme: String) -> Bool {
+    public class func isAppScheme(_ scheme: String) -> Bool {
         let schemeList: Array<String> = getAppSchemeList()
         
         for settingScheme: String in schemeList {
