@@ -2,7 +2,7 @@
 //  ObjcTopViewController.m
 //  MUtil
 //
-//  Created by 宮田　寿康 on 2017/01/05.
+//  Created by mute778 on 2017/01/05.
 //  Copyright © 2017年 CocoaPods. All rights reserved.
 //
 
