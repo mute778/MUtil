@@ -103,14 +103,26 @@
                                     <action selector="testAction:" destination="k8e-NQ-DDL" eventType="touchUpInside" id="avW-zV-gcD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBt-CQ-0fE">
+                                <rect key="frame" x="20" y="134" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="EpO-Q3-NR9" firstAttribute="top" secondItem="jcG-Sm-09o" secondAttribute="bottom" constant="20" id="2Hm-1N-pqo"/>
+                            <constraint firstItem="lBt-CQ-0fE" firstAttribute="leading" secondItem="tQ4-YZ-ci2" secondAttribute="leading" constant="20" id="Jgo-PP-JMu"/>
+                            <constraint firstAttribute="trailing" secondItem="lBt-CQ-0fE" secondAttribute="trailing" constant="20" id="Lh6-as-qSw"/>
                             <constraint firstItem="EpO-Q3-NR9" firstAttribute="leading" secondItem="tQ4-YZ-ci2" secondAttribute="leading" constant="20" id="Whs-XE-XtK"/>
                             <constraint firstAttribute="trailing" secondItem="EpO-Q3-NR9" secondAttribute="trailing" constant="20" id="Yqo-z0-dl3"/>
+                            <constraint firstItem="lBt-CQ-0fE" firstAttribute="top" secondItem="EpO-Q3-NR9" secondAttribute="bottom" constant="20" id="f9w-Gs-nYm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="testLabel" destination="lBt-CQ-0fE" id="e1t-8e-bgj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dho-C5-zEu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

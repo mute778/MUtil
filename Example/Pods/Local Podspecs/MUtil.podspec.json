@@ -1,6 +1,6 @@
 {
   "name": "MUtil",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "summary": "My utility.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/mute778/MUtil",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/mute778/MUtil.git",
-    "tag": "0.1.2"
+    "tag": "0.1.3"
   },
   "platforms": {
     "ios": "8.0"

@@ -39,29 +39,29 @@
 		49E21EE3E4903B443F513427E96CDB50 /* MUtil.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MUtil.xcconfig; sourceTree = "<group>"; };
 		4A3575F197D21C4FAF6F7D4558BFBD37 /* MUtil-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MUtil-umbrella.h"; sourceTree = "<group>"; };
 		4CBF2388CB751CE1E042CD8120116C95 /* Pods-MUtil_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MUtil_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		522E0509E765627EC552581BE7CA0D8D /* Pods-MUtil_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MUtil_Tests.modulemap"; sourceTree = "<group>"; };
-		55B14AE9D40B2FE5F2B66DB4DCA41A38 /* Pods_MUtil_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MUtil_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		522E0509E765627EC552581BE7CA0D8D /* Pods-MUtil_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MUtil_Tests.modulemap"; sourceTree = "<group>"; };
+		55B14AE9D40B2FE5F2B66DB4DCA41A38 /* Pods_MUtil_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MUtil_Example.framework; path = "Pods-MUtil_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56847BCC95D031E55BC1D42C73D903B5 /* MUtil-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MUtil-dummy.m"; sourceTree = "<group>"; };
 		583720BC12E1E2EF54EA4B63450879B0 /* Pods-MUtil_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MUtil_Tests-resources.sh"; sourceTree = "<group>"; };
 		6A6D68FF7EB61104F95E35EA56373B9C /* Pods-MUtil_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MUtil_Tests-umbrella.h"; sourceTree = "<group>"; };
 		7946E90EE49DE638EF6E07907DF052D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7EB8BEA6A667CB985B51F6171D453314 /* Pods-MUtil_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MUtil_Example.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7EB8BEA6A667CB985B51F6171D453314 /* Pods-MUtil_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MUtil_Example.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9BC8B5E1927A452A8EF4708DC3106558 /* Pods-MUtil_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MUtil_Example-umbrella.h"; sourceTree = "<group>"; };
 		A25665BC726453E214EF1CE24A7A4136 /* MUtil-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MUtil-prefix.pch"; sourceTree = "<group>"; };
 		B6FAC30E327B0C69EB8F3D4974712B26 /* Pods-MUtil_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MUtil_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BD5206163B4F71F5F39BC5FAD70E1389 /* Pods-MUtil_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MUtil_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C1DB82826FF4B8375F9C555E8E4C5066 /* Pods-MUtil_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MUtil_Tests-dummy.m"; sourceTree = "<group>"; };
 		C1FF7311DB6E05A705558EA4C08078AE /* Pods-MUtil_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MUtil_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C3A6A64C2BDDF45EF229A8986F2327D6 /* MUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3A6A64C2BDDF45EF229A8986F2327D6 /* MUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MUtil.framework; path = MUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90EBE738768E9584B006CE047894C10 /* Pods-MUtil_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MUtil_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CD9D6BF934EBAEC8CDE81DDA724E5C7E /* Pods-MUtil_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MUtil_Example-dummy.m"; sourceTree = "<group>"; };
 		D3A481440215E6F9E38BBAF2575E0A81 /* Pods-MUtil_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MUtil_Example-resources.sh"; sourceTree = "<group>"; };
 		ECE1C75B17D3FA7679BC9C7301F680B5 /* Pods-MUtil_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MUtil_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F18EC014CF1B7A0372A3B9BF506E9779 /* Pods-MUtil_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MUtil_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F7A357D280C590E7B97CDC5E228579E5 /* Pods_MUtil_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MUtil_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8E6A24CC11C23ECA1BD30D2A122956B /* MUtil.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MUtil.modulemap; sourceTree = "<group>"; };
+		F7A357D280C590E7B97CDC5E228579E5 /* Pods_MUtil_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MUtil_Tests.framework; path = "Pods-MUtil_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E6A24CC11C23ECA1BD30D2A122956B /* MUtil.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MUtil.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +97,7 @@
 			children = (
 				4C8A1000C1F7BA3442FAF3F06FBABACC /* Classes */,
 			);
+			name = MUtil;
 			path = MUtil;
 			sourceTree = "<group>";
 		};
@@ -119,6 +120,7 @@
 			children = (
 				37DBB6040BDD13DE2101A5AB072DD4B1 /* MUtil.swift */,
 			);
+			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};

@@ -10,20 +10,44 @@ import UIKit
 import MUtil
 
 class SwiftTopViewController: UIViewController {
-
+    
+    // =============================================================================
+    // MARK: - value
+    // =============================================================================
+    
+    // =============================================================================
+    // MARK: - Outlet
+    // =============================================================================
+    @IBOutlet weak var testLabel: UILabel!
+    
+    
+    // =============================================================================
+    // MARK: - LifeCycle
+    // =============================================================================
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        testLabel.text = "あいうえおあいうえおあいうえおあいうえおあいうえお"
+        
+        let height = MUtil.getLabelHeight(label: testLabel)
+        print(height)
+        
+        let settings = UIUserNotificationSettings(types: .badge, categories: nil)
+        UIApplication.shared.registerUserNotificationSettings(settings)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
+    // =============================================================================
+    // MARK: - Action
+    // =============================================================================
     @IBAction func testAction(_ sender: UIButton) {
-        let version = MUtil.getAppVersion()
-        print(version)
+//        testLabel.text = testLabel.text! + "あいうえお"
+//        let height = MUtil.getLabelHeight(label: testLabel)
+//        print(height)
     }
 }

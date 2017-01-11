@@ -10,6 +10,16 @@ import UIKit
 
 @objc public class MUtil: NSObject {
     
+    public enum CheckVersionTarget {
+        case OSVersion
+        case AppVersion
+        case BuildVersion
+    }
+    
+    // =============================================================================
+    // MARK: - PublicMethod
+    // =============================================================================
+    
     /**
      ログを出力する
      - parameter message: 出力文字列
@@ -28,7 +38,6 @@ import UIKit
         let fileName = filePath.last!.components(separatedBy: ".")
         
         let dateStr = self.getGregorianDateString(date: Date(), format: "yyyy-MM-dd HH:mm:ss.sss")
-        
         
         #if DLOG
             print("\(dateStr) [\(fileName.first!) \(function) - \(line)]\n\(message)")
@@ -59,6 +68,52 @@ import UIKit
      */
     public class func getBuildVersion() -> String {
         return Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as! String
+    }
+    
+    /**
+     ベンダーIDを取得する
+     - returns: String ベンダーID
+     */
+    public class func getVendorId() -> String {
+        return (UIDevice.current.identifierForVendor?.uuidString)!
+    }
+    
+    /**
+     画面サイズを取得する
+     - returns: CGSize 画面サイズ
+     */
+    public class func getScreenBounds() -> CGSize {
+        return UIScreen.main.bounds.size
+    }
+    
+    /**
+     現在のアプリバージョンが指定範囲内であるか確認する
+     - parameter min: 範囲最小バージョン
+     - parameter max: 範囲最大バージョン
+     - return: Bool YES:範囲内, NO:範囲外
+     */
+    public class func checkVersionRange(target: CheckVersionTarget, min: String, max: String) -> Bool {
+        var currentVersion: String
+        
+        switch target {
+        case .OSVersion:
+            currentVersion = self.getOsVersion()
+        case .AppVersion:
+            currentVersion = self.getAppVersion()
+        case .BuildVersion:
+            currentVersion = self.getBuildVersion()
+        default:
+            return false
+        }
+        
+        let minResult = min.compare(currentVersion, options: .numeric)
+        let maxResult = max.compare(currentVersion, options: .numeric)
+        
+        if ( (minResult == .orderedAscending || minResult == .orderedSame) && (maxResult == .orderedSame || maxResult == .orderedDescending) ) {
+            return true
+        }
+        
+        return false
     }
     
     /**
@@ -115,10 +170,73 @@ import UIKit
     }
     
     /**
+     文字列がアプリで設定されているスキームであるか確認する
+     - parameter scheme: String 確認対象文字列
+     - returns: Bool YES:設定されている, NO:設定されていない
+     */
+    public class func isAppScheme(_ scheme: String) -> Bool {
+        let util = MUtil()
+        let schemeList: Array<String> = util.getAppSchemeList()
+        
+        for settingScheme: String in schemeList {
+            if ( settingScheme == scheme ) {
+                return true
+            }
+        }
+        
+        return false
+    }
+    
+    /**
+     指定文字列をエンコードする
+     - parameter url: String エンコード対象文字列
+     - returns: String エンコード後文字列
+     */
+    public class func encodeUrlString(_ url: String) -> String {
+        return url.addingPercentEncoding(withAllowedCharacters: .alphanumerics)!
+    }
+    
+    /**
+     指定文字列をデコードする
+     - parameter url: String デコード対象文字列
+     - returns: String デコード後文字列
+     */
+    public class func decodeUrlString(_ url: String) -> String {
+        return url.removingPercentEncoding!
+    }
+    
+    /**
+     ラベルの高さを取得する
+     - parameter label: 表示するUILabel
+     - returns: CGFloat ラベルの高さ
+     */
+    public class func getLabelHeight(label: UILabel) -> CGFloat {
+        let attrString = NSAttributedString.init(string: label.text!,
+                                                 attributes: [NSFontAttributeName:label.font])
+        let rect = attrString.boundingRect(with: CGSize(width: label.frame.size.width,
+                                                        height: CGFloat.greatestFiniteMagnitude),
+                                           options: .usesLineFragmentOrigin,
+                                           context: nil)
+        return rect.height
+    }
+    
+    /**
+     アプリアイコンにバッジを設定する
+     - parameter badgeNumber: 設定数値(0の場合は削除)
+     */
+    public class func setAppBadge(_ badgeNum: Int) -> Void {
+        UIApplication.shared.applicationIconBadgeNumber = badgeNum
+    }
+    
+    // =============================================================================
+    // MARK: - PrivateMethod
+    // =============================================================================
+    
+    /**
      設定されているアプリのスキームを全て取得する
      - returns: Array<String>
      */
-    public class func getAppSchemeList() -> Array<String> {
+    private func getAppSchemeList() -> Array<String> {
         
         var result: Array<String> = []
         
@@ -136,22 +254,5 @@ import UIKit
         }
         
         return result
-    }
-    
-    /**
-     文字列がアプリで設定されているスキームであるか確認する
-     - parameter scheme: String 確認対象文字列
-     - returns: Bool YES:設定されている, NO:設定されていない
-     */
-    public class func isAppScheme(_ scheme: String) -> Bool {
-        let schemeList: Array<String> = getAppSchemeList()
-        
-        for settingScheme: String in schemeList {
-            if ( settingScheme == scheme ) {
-                return true
-            }
-        }
-        
-        return false
     }
 }

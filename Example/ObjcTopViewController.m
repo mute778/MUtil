@@ -26,8 +26,7 @@
 }
 
 - (IBAction)testAction:(UIButton *)sender {
-    NSString *version = [MUtil getAppVersion];
-    NSLog(@"%@", version);
+    
 }
 
 
