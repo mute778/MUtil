@@ -1,6 +1,6 @@
 # MUtil
 
-[![CI Status](http://img.shields.io/travis/宮田　寿康/MUtil.svg?style=flat)](https://travis-ci.org/宮田　寿康/MUtil)
+[![CI Status](http://img.shields.io/travis/mute778/MUtil.svg?style=flat)](https://travis-ci.org/mute778/MUtil)
 [![Version](https://img.shields.io/cocoapods/v/MUtil.svg?style=flat)](http://cocoapods.org/pods/MUtil)
 [![License](https://img.shields.io/cocoapods/l/MUtil.svg?style=flat)](http://cocoapods.org/pods/MUtil)
 [![Platform](https://img.shields.io/cocoapods/p/MUtil.svg?style=flat)](http://cocoapods.org/pods/MUtil)
