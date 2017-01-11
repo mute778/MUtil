@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  MUtil
 //
-//  Created by 宮田　寿康 on 12/26/2016.
-//  Copyright (c) 2016 宮田　寿康. All rights reserved.
+//  Created by mute778 on 12/26/2016.
+//  Copyright (c) 2016 mute778. All rights reserved.
 //
 
 import UIKit
