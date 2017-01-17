@@ -102,8 +102,6 @@ import UIKit
             currentVersion = self.getAppVersion()
         case .BuildVersion:
             currentVersion = self.getBuildVersion()
-        default:
-            return false
         }
         
         let minResult = min.compare(currentVersion, options: .numeric)
