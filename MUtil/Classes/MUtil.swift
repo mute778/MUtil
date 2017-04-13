@@ -116,6 +116,7 @@ import UIKit
     
     /**
      ローカライズファイルから文字列を取得する
+     - returns: String
      */
     public class func getLocalizedString(_ key: String) -> String {
         return NSLocalizedString(key, comment: "");
@@ -125,6 +126,7 @@ import UIKit
      グレゴリオ暦形式で日付文字列を返却する
      - parameter date: 変換対象日付
      - paremeter format: 出力形式フォーマット
+     - returns: String
      */
     public class func getGregorianDateString(date: Date, format: String) -> String {
         
@@ -139,6 +141,22 @@ import UIKit
         dateFormat.calendar = calendar
         
         return dateFormat.string(from: date)
+    }
+    
+    /**
+     文字列を日付に変換する
+     - parameter fromString: 変換対象日付文字列
+     - parameter format: 変換対象日付文字列のフォーマット
+     - returns: Date
+     */
+    public class func getDate(fromString: String, format: String) -> Date {
+        
+        // DateFormatter設定
+        let dateFormat = DateFormatter()
+        dateFormat.dateFormat = format
+        dateFormat.locale = Locale.current
+        
+        return dateFormat.date(from: fromString)!
     }
     
     /**
