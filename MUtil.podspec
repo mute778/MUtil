@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MUtil'
-  s.version          = '0.1.6'
+  s.version          = '0.1.8'
   s.summary          = 'My utility.'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'MUtil/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'MUtil' => ['MUtil/Assets/*.png']
   # }
